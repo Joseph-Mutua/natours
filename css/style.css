@@ -221,11 +221,12 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem;
-  background-color: orange;
-  height: 50rem;
-  transition: all .75s; }
-  .card:hover {
+  -moz-perspective: 150rem; }
+  .card__side {
+    background-color: orange;
+    height: 50rem;
+    transition: all .8s; }
+  .card:hover .card__side {
     transform: rotateY(180deg); }
 
 .header {
