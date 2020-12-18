@@ -7,8 +7,6 @@
   height: 50rem;
 
   &__side {
-    background-color: #fff;
-    height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -20,7 +18,6 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15) &--front {
       background-color: #fff;
     }
-
 
     &--back {
       transform: rotateY(180deg);
@@ -50,14 +47,15 @@
     height: 23rem;
     background-blend-mode: color;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
       background-image: linear-gradient(
           to right bottom,
           $color-secondary-light,
           $color-secondary-dark
-        ), url(../img/nat-5.jpg);
+        ),
+        url(../img/nat-5.jpg);
     }
 
     &--2 {
@@ -66,6 +64,31 @@
 
     &--3 {
       background-image: url(../img/nat-5.img);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 85)
+      );
     }
   }
 }
